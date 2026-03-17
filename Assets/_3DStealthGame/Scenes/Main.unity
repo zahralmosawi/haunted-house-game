@@ -936,6 +936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 2165089947123058480, guid: e9f4b012e843041d486c25cdcc508f08,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1729982934}
     - target: {fileID: 5109191391531912167, guid: e9f4b012e843041d486c25cdcc508f08,
         type: 3}
       propertyPath: m_LocalPosition.x
