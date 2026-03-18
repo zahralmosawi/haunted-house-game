@@ -137,6 +137,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 2165089947123058480, guid: e9f4b012e843041d486c25cdcc508f08,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 2427448675640319535, guid: e9f4b012e843041d486c25cdcc508f08,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -327,8 +332,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 1
   displayImageDuration: 1
-  player: {fileID: 0}
-  uiDocument: {fileID: 0}
+  player: {fileID: 1022267173}
+  uiDocument: {fileID: 141172852}
 --- !u!4 &473497995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5109191391531912167, guid: e9f4b012e843041d486c25cdcc508f08,
@@ -426,6 +431,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 1728736068073282926, guid: 180f6d91844de4a95b26e14ff5a568bd,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 3206724894370110533, guid: 180f6d91844de4a95b26e14ff5a568bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -571,6 +581,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1814355261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1022267173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4906971466091769298, guid: 11b1168834fd24d6bbb925b46b9c1a62,
+    type: 3}
+  m_PrefabInstance: {fileID: 3053362339903572800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1050882084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899025087933800558, guid: 180f6d91844de4a95b26e14ff5a568bd,
@@ -1154,6 +1170,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 2165089947123058480, guid: e9f4b012e843041d486c25cdcc508f08,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 2427448675640319535, guid: e9f4b012e843041d486c25cdcc508f08,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1367,6 +1388,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 2165089947123058480, guid: e9f4b012e843041d486c25cdcc508f08,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 2427448675640319535, guid: e9f4b012e843041d486c25cdcc508f08,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1501,6 +1527,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 1728736068073282926, guid: 180f6d91844de4a95b26e14ff5a568bd,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 3206724894370110533, guid: 180f6d91844de4a95b26e14ff5a568bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1629,6 +1660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6210145454777374227, guid: 11b1168834fd24d6bbb925b46b9c1a62,
+        type: 3}
+      propertyPath: walkSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1652,6 +1688,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729982934}
+    - target: {fileID: 2165089947123058480, guid: e9f4b012e843041d486c25cdcc508f08,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 300386091}
     - target: {fileID: 2427448675640319535, guid: e9f4b012e843041d486c25cdcc508f08,
         type: 3}
       propertyPath: waypoints.Array.size
