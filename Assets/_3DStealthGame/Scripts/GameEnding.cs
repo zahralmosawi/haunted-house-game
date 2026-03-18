@@ -8,10 +8,13 @@ public class GameEnding : MonoBehaviour
     public float displayImageDuration = 1f;
     public GameObject player;
     public UIDocument uiDocument;
+    public AudioSource exitAudio;
+    public AudioSource caughtAudio;
 
     bool m_IsPlayerAtExit;
     bool m_IsPlayerCaught;
     float m_Timer;
+    bool m_HasAudioPlayed;
 
     private VisualElement m_EndScreen;
     private VisualElement m_CaughtScreen;
@@ -21,8 +24,8 @@ public class GameEnding : MonoBehaviour
         m_EndScreen = uiDocument.rootVisualElement.Q<VisualElement>("EndScreen");
         m_CaughtScreen = uiDocument.rootVisualElement.Q<VisualElement>("CaughtScreen");
     }
-
-    void OnTriggerEnter(Collider other)
+    
+    void OnTriggerEnter (Collider other)
     {
         if (other.gameObject == player)
         {
@@ -30,25 +33,31 @@ public class GameEnding : MonoBehaviour
         }
     }
 
-    public void CaughtPlayer()
+    public void CaughtPlayer ()
     {
         m_IsPlayerCaught = true;
     }
 
-    void Update()
+    void Update ()
     {
         if (m_IsPlayerAtExit)
         {
-            EndLevel(m_EndScreen, false);
+            EndLevel (m_EndScreen, false, exitAudio);
         }
         else if (m_IsPlayerCaught)
         {
-            EndLevel(m_CaughtScreen, true);
+            EndLevel (m_CaughtScreen, true, caughtAudio);
         }
     }
 
-    void EndLevel(VisualElement element, bool doRestart)
+    void EndLevel (VisualElement element, bool doRestart, AudioSource audioSource)
     {
+        if (!m_HasAudioPlayed)
+        {
+            audioSource.Play();
+            m_HasAudioPlayed = true;
+        }
+            
         m_Timer += Time.deltaTime;
         element.style.opacity = m_Timer / fadeDuration;
 
@@ -56,12 +65,13 @@ public class GameEnding : MonoBehaviour
         {
             if (doRestart)
             {
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene (0);
             }
             else
             {
                 Application.Quit();
                 Time.timeScale = 0;
+               
             }
         }
     }

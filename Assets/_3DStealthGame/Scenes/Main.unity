@@ -334,6 +334,8 @@ MonoBehaviour:
   displayImageDuration: 1
   player: {fileID: 1022267173}
   uiDocument: {fileID: 141172852}
+  exitAudio: {fileID: 1009783386}
+  caughtAudio: {fileID: 561772282}
 --- !u!4 &473497995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5109191391531912167, guid: e9f4b012e843041d486c25cdcc508f08,
